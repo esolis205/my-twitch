@@ -138,7 +138,7 @@ function Navbar() {
       {/* Right Side */}
       <div className="hidden md:flex grow items-center justify-end">
         <div className="flex items-center">
-          <Link href="/">
+          <Link href="/account">
             <button className="px-4 py-[6px] rounded-lg bg-[#9147ff] mr-2">
               Account
             </button>
@@ -170,7 +170,7 @@ function Navbar() {
             <Link href="/">Top Categories</Link>
           </li>
           <li className="p-4 text-3xl font-bold">
-            <Link href="/">Account</Link>
+            <Link href="/account">Account</Link>
           </li>
         </ul>
       </div>

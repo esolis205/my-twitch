@@ -18,7 +18,7 @@ function Navbar() {
     setNav(!nav);
   };
   const { data: session } = useSession();
-  console.log(session);
+  // console.log(session);
 
   return (
     <div className="fixed h-14 w-full flex flex-nowrap items-center p-4 bg-[#0e0e10] mb-[2px] z-10 ">
@@ -146,7 +146,7 @@ function Navbar() {
               <div className="flex felx-row">
                 <p className=" pl-1 pr-4 cursor-pointer">
                   Hello,{" "}
-                  <span className=" text-purple-400">{session.user.name}</span>
+                  <span className=" text-[#9147ff] font-bold">{session.user.name}</span>
                 </p>
               </div>
             </Link>
@@ -203,7 +203,6 @@ function Navbar() {
                           >
                             Sign Out
                           </button>
-                            //<button onClick={() => signOut()}>Sign Out</button>
                         )}
                       </Menu.Item>
                     </div>
@@ -237,16 +236,16 @@ function Navbar() {
         }
       >
         <ul className="text-center">
-          <li className="p-4 text-3xl font-bold">
-            <Link href="/">Home</Link>
+          <li onClick={() => setNav(false)} className="p-4 text-3xl font-bold">
+            <Link href="http://localhost:3000">Home</Link>
           </li>
-          <li className="p-4 text-3xl font-bold">
+          <li onClick={() => setNav(false)} className="p-4 text-3xl font-bold">
             <Link href="/">Live Channels</Link>
           </li>
-          <li className="p-4 text-3xl font-bold">
+          <li onClick={() => setNav(false)} className="p-4 text-3xl font-bold">
             <Link href="/">Top Categories</Link>
           </li>
-          <li className="p-4 text-3xl font-bold">
+          <li onClick={() => setNav(false)} className="p-4 text-3xl font-bold">
             <Link href="/account">Account</Link>
           </li>
         </ul>

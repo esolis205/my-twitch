@@ -13,7 +13,7 @@ import Live10 from '../public/assets/live/live10.jpeg';
 
 function LiveChannels() {
   return (
-    <div className='p-2 md:p-8'>
+    <div id="channel" className='p-2 md:p-8'>
         <h2 className='text-xl font-bold px-2'>
             <span className=' text-[#9147ff]'>Live Channels</span> we think you would like
         </h2>

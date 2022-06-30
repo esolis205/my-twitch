@@ -2,6 +2,7 @@ import React from 'react'
 import LiveChannels from './LiveChannels'
 import Hero from './Hero'
 import IconBar from './IconBar'
+import Categories from './Categories'
 
 function Main() {
   return (
@@ -9,6 +10,7 @@ function Main() {
         <Hero />
         <LiveChannels />
         <IconBar />
+        <Categories />
     </div>
   )
 }
